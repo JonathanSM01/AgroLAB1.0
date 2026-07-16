@@ -1,0 +1,269 @@
+<header class="topbar">
+
+    <div>
+
+        <h1>🎓 AgroLab Academy</h1>
+
+        <p>
+
+            Centro de aprendizaje sobre compostaje, agricultura sostenible,
+            fertilización orgánica y economía circular.
+
+        </p>
+
+    </div>
+
+</header>
+
+<!-- ================= AGROBOT ================= -->
+
+<section class="academy-hero fadeUp" >
+
+    <div class="bot-card">
+
+        <div class="bot-avatar">
+
+            🤖
+
+            <span class="online"></span>
+
+        </div>
+
+        <div class="bot-info">
+
+            <h2>AgroBot</h2>
+
+            <span class="status">
+
+                🟢 En línea
+
+            </span>
+
+            <p id="botMessage">
+
+                Inicializando asistente...
+
+            </p>
+
+            <!-- Barra de conocimiento -->
+
+            <div class="bot-progress">
+
+                <div class="progress-header">
+
+                    <span>🧠 Base de conocimiento</span>
+
+                    <span>97%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+                <div class="bot-skills">
+
+                    <span>🌱 Compostaje</span>
+
+                    <span>🧪 NPK</span>
+
+                    <span>🍃 Humus</span>
+
+                    <span>🌾 Agricultura</span>
+
+                    <span>♻ Economía Circular</span>
+
+                    <span>🦠 Microorganismos</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Buscador -->
+
+    <div class="search-box">
+
+        <input
+
+            type="text"
+
+            id="academySearch"
+
+            placeholder="Pregúntame sobre compost, humus, NPK, microorganismos..."
+
+        >
+
+        <button onclick="searchAcademy()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Buscar
+
+        </button>
+
+    </div>
+
+    <!-- Consejo del día -->
+
+    <div class="tip-card">
+
+        <h3>
+
+            💡 Consejo de AgroBot
+
+        </h3>
+
+        <p id="dailyTip">
+
+            Cargando consejo...
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TARJETAS ================= -->
+
+<div class="cards">
+
+    <div class="card academy-card fadeUp fadelay1" onclick="showResource('videos')">
+
+        <i class="fa-solid fa-video"></i>
+
+        <h3>Videos</h3>
+
+        <p>Contenido audiovisual recomendado.</p>
+
+    </div>
+
+    <div class="card academy-card fadeUp fadelay2" onclick="showResource('articles')">
+
+        <i class="fa-solid fa-book-open"></i>
+
+        <h3>Artículos</h3>
+
+        <p>Investigaciones científicas.</p>
+
+    </div>
+
+    <div class="card academy-card fadeUp fadelay3" onclick="showResource('organizations')">
+
+        <i class="fa-solid fa-earth-americas"></i>
+
+        <h3>Organizaciones</h3>
+
+        <p>Instituciones internacionales.</p>
+
+    </div>
+
+    <div class="card academy-card fadeUp fadelay4" onclick="showResource('concepts')">
+
+        <i class="fa-solid fa-flask"></i>
+
+        <h3>Conceptos</h3>
+
+        <p>Aprende los términos básicos.</p>
+
+    </div>
+
+</div>
+
+<div class="panel" id="resourcePanel">
+
+    <h2 id="resourceTitle">
+
+        Selecciona una categoría
+
+    </h2>
+
+    <div id="resourceContent">
+
+        Pulsa cualquiera de las tarjetas superiores para explorar contenido.
+
+    </div>
+
+</div>
+
+<!-- ================= PALABRAS CLAVE ================= -->
+
+<section class="panel">
+
+    <h2>🏷 Palabras clave</h2>
+
+        <div class="keywords">
+
+            <button onclick="quickSearch('compost')">Compost</button>
+
+            <button onclick="quickSearch('humus')">Humus</button>
+
+            <button onclick="quickSearch('NPK fertilizer')">NPK</button>
+
+            <button onclick="quickSearch('sustainable agriculture')">Agricultura</button>
+
+            <button onclick="quickSearch('sustainability')">Sostenibilidad</button>
+
+            <button onclick="quickSearch('radish cultivation')">Rábano</button>
+
+            <button onclick="quickSearch('organic matter')">Materia Orgánica</button>
+
+            <button onclick="quickSearch('soil microorganisms')">Microorganismos</button>
+
+            <button onclick="quickSearch('circular economy')">Economía Circular</button>
+
+        </div>
+
+</section>
+
+<!-- ================= RUTA ================= -->
+
+<section class="panel">
+
+    <h2>📈 Ruta de aprendizaje</h2>
+
+    <div class="learning-road">
+
+        <div>1️⃣ ¿Qué es el compost?</div>
+
+        <div>⬇</div>
+
+        <div>2️⃣ Elaboración del humus</div>
+
+        <div>⬇</div>
+
+        <div>3️⃣ Fertilizante NPK</div>
+
+        <div>⬇</div>
+
+        <div>4️⃣ Agricultura sostenible</div>
+
+        <div>⬇</div>
+
+        <div>🏆 ¡Ahora puedes iniciar tu propio compost!</div>
+
+    </div>
+
+</section>
+
+<!-- ================= MENSAJE ================= -->
+
+<section class="academy-footer">
+
+    <h2>🌱 Mensaje de AgroBot</h2>
+
+    <p>
+
+        "La sostenibilidad comienza con pequeñas acciones.
+        Gracias por aprender con AgroLab."
+
+    </p>
+
+</section>

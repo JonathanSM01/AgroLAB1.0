@@ -1,0 +1,335 @@
+/*=========================================
+        AGROLAB MOBILE v1.1
+=========================================*/
+
+@media (max-width: 900px){
+
+/*==========================
+GENERAL
+==========================*/
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+.content{
+
+    margin-left:0 !important;
+
+    padding:18px !important;
+
+}
+
+.topbar{
+
+    margin-top:60px;
+
+}
+
+/*==========================
+SIDEBAR
+==========================*/
+
+.sidebar{
+
+    width:260px;
+
+    left:-270px;
+
+    transition:.35s ease;
+
+    box-shadow:8px 0 25px rgba(0,0,0,.25);
+
+}
+
+.sidebar.show{
+
+    left:0;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.menu{
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:16px;
+
+}
+
+/*==========================
+BOTÓN MENU
+==========================*/
+
+.menu-toggle{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:15px;
+
+    font-size:22px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+}
+
+/*==========================
+TÍTULOS
+==========================*/
+
+h1{
+
+    font-size:30px !important;
+
+}
+
+h2{
+
+    font-size:24px !important;
+
+}
+
+h3{
+
+    font-size:20px !important;
+
+}
+
+p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/*==========================
+CARDS
+==========================*/
+
+.card{
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+}
+
+.cards{
+
+    gap:18px;
+
+}
+
+/*==========================
+GRID
+==========================*/
+
+.dashboard-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/*==========================
+BOTONES
+==========================*/
+
+button{
+
+    min-height:48px;
+
+}
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+.search-box button{
+
+    width:100%;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+/*==========================
+CHART
+==========================*/
+
+.chart-container{
+
+    height:300px;
+
+}
+
+/*==========================
+ACADEMY
+==========================*/
+
+.bot-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.bot-avatar{
+
+    margin-bottom:15px;
+
+}
+
+.bot-skills{
+
+    justify-content:center;
+
+}
+
+.progress-header{
+
+    font-size:14px;
+
+}
+
+.keywords{
+
+    justify-content:center;
+
+}
+
+/*==========================
+GALERÍA
+==========================*/
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+/*==========================
+FIRMA
+==========================*/
+
+.signature{
+
+    padding:35px 20px;
+
+}
+
+.signature h1{
+
+    font-size:30px !important;
+
+}
+
+.author{
+
+    font-size:24px !important;
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero h1{
+
+    font-size:42px !important;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.hero button{
+
+    width:auto;
+
+}
+
+/*==========================
+TABLAS
+==========================*/
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+/*==========================
+IMÁGENES
+==========================*/
+
+img{
+
+    border-radius:15px;
+
+}
+
+}
+
+/*==========================
+OVERLAY
+==========================*/
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9997;
+
+}
+
+.overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}

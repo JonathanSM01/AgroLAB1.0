@@ -1,0 +1,120 @@
+@import url('variables.css');
+@import url("layout.css");
+@import url("sidebar.css");
+@import url("dashboard.css");
+@import url("components.css");
+@import url("hero.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:var(--font);
+
+    background:var(--background);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/* ==================================
+   HERO
+================================== */
+
+.hero{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+    color:var(--primary);
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.hero button{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:16px 32px;
+
+    border-radius:var(--radius);
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+}
+
+.hero button:hover{
+
+    transform:translateY(-3px);
+
+}

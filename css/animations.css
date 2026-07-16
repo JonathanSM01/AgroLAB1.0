@@ -1,0 +1,135 @@
+.fade{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+TRANSICIONES DE VISTAS
+====================================*/
+
+.fade-out{
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+
+}
+
+.fade-in{
+
+    animation:viewFade .35s ease;
+
+}
+
+@keyframes viewFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+ANIMACIÓN ESCALONADA DE TARJETAS
+=========================================*/
+
+.card{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    animation:cardAppear .6s ease forwards;
+
+}
+
+.cards .card:nth-child(1){
+
+    animation-delay:.10s;
+
+}
+
+.cards .card:nth-child(2){
+
+    animation-delay:.25s;
+
+}
+
+.cards .card:nth-child(3){
+
+    animation-delay:.40s;
+
+}
+
+.cards .card:nth-child(4){
+
+    animation-delay:.55s;
+
+}
+
+.cards .card:nth-child(5){
+
+    animation-delay:.70s;
+
+}
+
+.cards .card:nth-child(6){
+
+    animation-delay:.85s;
+
+}
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

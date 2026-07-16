@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoCompost Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/academy.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/loader-screen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/tour.css">
+
+</head>
+
+<!-- =====================================
+     LOADER
+====================================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+
+            🌱
+
+        </div>
+
+        <h1>AgroLab</h1>
+
+        <p>
+
+            Sistema Interactivo para el Monitoreo del Compostaje
+
+        </p>
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+        <span id="progressText">
+
+            Inicializando...
+
+        </span>
+
+        <div id="progressPercent">
+
+            0%
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- ========= LANDING ========= -->
+
+    <section class="hero fade" id="landing">
+
+        <div class="hero-content">
+
+            <h1>🌱 AgroLab</h1>
+
+            <p>Sistema Interactivo de Monitoreo de Compost</p>
+
+            <button id="startBtn">
+                Explorar Proyecto
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========= DASHBOARD ========= -->
+
+    <button id="menuToggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <main id="dashboard" class="dashboard hidden">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+        
+        <div class="overlay" id="overlay"></div>
+
+        <div class="logo">
+
+            🌱 AgroLab
+
+        </div>
+
+            <nav>
+
+                <button class="menu active" data-view="home">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </button>
+
+                <button class="menu" data-view="project">
+                    <i class="fa-solid fa-seedling"></i>
+                    Proyecto
+                </button>
+
+                <button class="menu" data-view="treatments">
+                    <i class="fa-solid fa-flask"></i>
+                    Tratamientos
+                </button>
+
+                <button class="menu" data-view="results">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Resultados
+                </button>
+
+                <button class="menu" data-view="simulation">
+                    <i class="fa-solid fa-leaf"></i>
+                    Simulación
+                </button>
+
+                <button class="menu" data-view="evidence">
+                    <i class="fa-solid fa-camera"></i>
+                    Evidencias
+                </button>
+
+                <button class="menu" data-view="costs">
+                    <i class="fa-solid fa-coins"></i>
+                    Costos
+                </button>
+
+                <button class="menu" data-view="conclusions">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Conclusiones
+                </button>
+
+                <button class="menu" data-view="academy">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    AgroLab Academy
+                </button>
+
+            </nav>
+
+        </aside>
+
+        <!-- Contenido dinámico -->
+
+        <section class="content">
+
+            <div id="view"></div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/loader-screen.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/evidence.js"></script>
+    <script src="js/costs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="js/conclusions.js"></script>
+    <script src="js/academy.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/tour.js"></script>
+
+</body>
+
+</html>

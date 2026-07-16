@@ -1,0 +1,174 @@
+<h1>🧪 Centro de Monitoreo Experimental</h1>
+
+<p class="subtitle">
+    Seguimiento cronológico de los tres tratamientos experimentales.
+</p>
+
+<!-- Línea de tiempo -->
+
+<div class="timeline">
+
+    <button class="time active" data-day="1">Día 1</button>
+
+    <button class="time" data-day="5">Día 5</button>
+
+    <button class="time" data-day="10">Día 10</button>
+
+    <button class="time" data-day="15">Día 15</button>
+
+    <button class="time" data-day="21">Día 21</button>
+
+</div>
+
+<!-- Tarjetas -->
+
+<div class="monitor-grid">
+
+    <!-- ================= T1 ================= -->
+
+    <div class="monitor-card">
+
+        <img src="assets/img/T1.jpg" alt="Tratamiento 1">
+
+        <div class="monitor-body">
+
+            <h2>🟤 T1</h2>
+
+            <span class="badge control">
+                Control
+            </span>
+
+            <p>🌡 Temperatura:
+                <strong id="t1Temp">29°C</strong>
+            </p>
+
+            <p>💧 Humedad:
+                <strong id="t1Hum">58%</strong>
+            </p>
+
+            <p>📌 Estado:
+                <strong id="t1State">
+                    Preparación
+                </strong>
+            </p>
+
+            <p id="t1Obs">
+
+                Tierra sin fertilización.
+
+            </p>
+
+            <div class="progress">
+
+                <div id="t1Bar" style="width:20%;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= T2 ================= -->
+
+    <div class="monitor-card">
+
+        <img src="assets/img/T2.jpg" alt="Tratamiento 2">
+
+        <div class="monitor-body">
+
+            <h2>🟢 T2</h2>
+
+            <span class="badge organic">
+                Compost
+            </span>
+
+            <p>🌡 Temperatura:
+                <strong id="t2Temp">29°C</strong>
+            </p>
+
+            <p>💧 Humedad:
+                <strong id="t2Hum">58%</strong>
+            </p>
+
+            <p>📌 Estado:
+                <strong id="t2State">
+                    Preparación
+                </strong>
+            </p>
+
+            <p id="t2Obs">
+
+                Mezcla de suelo con compost.
+
+            </p>
+
+            <div class="progress">
+
+                <div id="t2Bar" style="width:20%;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= T3 ================= -->
+
+    <div class="monitor-card">
+
+        <img src="assets/img/T3.jpg" alt="Tratamiento 3">
+
+        <div class="monitor-body">
+
+            <h2>🏆 T3</h2>
+
+            <span class="badge bestTag">
+                Compost + NPK
+            </span>
+
+            <p>🌡 Temperatura:
+                <strong id="t3Temp">29°C</strong>
+            </p>
+
+            <p>💧 Humedad:
+                <strong id="t3Hum">58%</strong>
+            </p>
+
+            <p>📌 Estado:
+                <strong id="t3State">
+                    Preparación
+                </strong>
+            </p>
+
+            <p id="t3Obs">
+
+                Mezcla de suelo, compost y fertilizante NPK.
+
+            </p>
+
+            <div class="progress">
+
+                <div id="t3Bar" style="width:20%;"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Pie informativo -->
+
+<div class="panel">
+
+    <h2>📋 Observación General</h2>
+
+    <p id="generalObservation">
+
+        Se realizó la preparación inicial de los tres tratamientos experimentales,
+        distribuyendo los materiales según el diseño del experimento.
+
+    </p>
+
+</div>

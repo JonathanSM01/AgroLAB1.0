@@ -1,0 +1,31 @@
+@media(max-width:900px){
+
+.dashboard{
+
+    grid-template-columns:1fr;
+
+}
+
+@media(max-width:900px){
+
+.dashboard{
+
+    flex-direction:column;
+
+}
+
+.welcome{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+.welcome{
+
+    grid-template-columns:1fr;
+
+}
+
+}

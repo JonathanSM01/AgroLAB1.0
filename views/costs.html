@@ -1,0 +1,242 @@
+<header class="topbar">
+
+    <div>
+
+        <h1>💰 Presupuesto del Proyecto</h1>
+
+        <p>Resumen de los recursos económicos utilizados durante el desarrollo del experimento.</p>
+
+    </div>
+
+</header>
+
+<!-- ================= TARJETAS ================= -->
+
+<section class="cards">
+
+    <div class="card">
+
+        <i class="fa-solid fa-sack-dollar"></i>
+
+        <h3>Presupuesto Total</h3>
+
+        <span>$<span id="totalBudget">0</span></span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-boxes-stacked"></i>
+
+        <h3>Materiales</h3>
+
+        <span id="materialsCount">0</span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>Estado</h3>
+
+        <span><span id="projectStatus">0</span>%</span>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>Factibilidad</h3>
+
+    <div class="traffic-light">
+
+        <div class="light red"></div>
+
+        <div class="light yellow"></div>
+
+        <div class="light green active"></div>
+
+    </div>
+
+    <p class="traffic-text">
+
+        Alta
+
+    </p>
+
+</div>
+
+</section>
+
+<!-- ================= TABLA ================= -->
+
+<section class="panel">
+
+    <h2>📋 Detalle de Costos</h2>
+
+    <table class="project-table">
+
+        <tr>
+
+            <th>Concepto</th>
+            <th>Cantidad</th>
+            <th>Valor Unitario</th>
+            <th>Total</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Recipientes para muestras</td>
+            <td>6</td>
+            <td>$0.25</td>
+            <td>$1.50</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Recipientes grandes</td>
+            <td>3</td>
+            <td>$0.90</td>
+            <td>$2.70</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Residuos orgánicos</td>
+            <td>-</td>
+            <td>-</td>
+            <td>$10.00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Fertilizante NPK</td>
+            <td>1</td>
+            <td>-</td>
+            <td>$2.50</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Semillas de rábano</td>
+            <td>1</td>
+            <td>-</td>
+            <td>$2.25</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Movilidad</td>
+            <td>-</td>
+            <td>-</td>
+            <td>$3.00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Agua y energía eléctrica</td>
+            <td>-</td>
+            <td>-</td>
+            <td>$3.05</td>
+
+        </tr>
+
+        <tr style="font-weight:bold;background:#E8F5E9;">
+
+            <td colspan="3">TOTAL</td>
+
+            <td>$25.00</td>
+
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- ================= GRÁFICA ================= -->
+
+<section class="panel">
+
+    <h2>📊 Distribución del Presupuesto</h2>
+
+    <div style="height:400px;">
+
+        <canvas id="costChart"></canvas>
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>💰 Análisis de Factibilidad Económica</h2>
+
+    <p>
+
+        El costo total del proyecto fue de <strong>$25.00</strong>, incluyendo
+        recipientes, residuos orgánicos, fertilizante, semillas, movilidad y
+        servicios básicos necesarios para el desarrollo del experimento.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        El mayor porcentaje del presupuesto (40%) se destinó a la obtención y
+        preparación de residuos orgánicos, mientras que el resto correspondió
+        a materiales complementarios indispensables para la ejecución del
+        proyecto.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        Desde el punto de vista económico, la producción de compost resulta
+        <strong>factible y sostenible</strong>, ya que emplea principalmente
+        residuos orgánicos de fácil acceso y bajo costo. Esto demuestra que es
+        posible obtener un abono orgánico de buena calidad con una inversión
+        reducida, favoreciendo además el aprovechamiento de materiales que
+        normalmente serían desechados.
+
+    </p>
+
+    <br>
+
+    <p>
+
+        A futuro, la elaboración continua de compost puede disminuir la
+        dependencia de fertilizantes químicos, reducir costos de producción y
+        contribuir a una agricultura más sostenible.
+
+    </p>
+
+    <br>
+
+    <div class="economic-box">
+
+        <h3>💡 Conclusión Económica</h3>
+
+        <p>
+
+        Con una inversión aproximada de <strong>$25.00</strong>, el proyecto
+        demuestra que la producción de compost es económicamente viable para
+        pequeñas prácticas agrícolas, educativas y familiares, aprovechando
+        residuos orgánicos y reduciendo el uso de fertilizantes químicos.
+
+        </p>
+
+    </div>
+
+</section>

@@ -1,0 +1,75 @@
+/*=========================================
+TOUR DE BIENVENIDA
+=========================================*/
+
+.tour-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999999;
+
+    animation:fadeIn .35s;
+
+}
+
+.tour-card{
+
+    background:white;
+
+    width:min(500px,90%);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.tour-card h2{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.tour-card p{
+
+    margin:20px 0;
+
+    line-height:1.6;
+
+}
+
+.tour-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    justify-content:center;
+
+    margin-top:25px;
+
+}
+
+.tour-buttons button{
+
+    width:auto;
+
+    padding:12px 22px;
+
+}

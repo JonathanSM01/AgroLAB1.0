@@ -1,0 +1,56 @@
+/* =======================================================
+   VARIABLES GLOBALES
+   Proyecto: EcoCompost Dashboard
+======================================================= */
+
+:root{
+
+    /* ===== COLORES ===== */
+
+    --primary:#2E7D32;
+    --primary-light:#4CAF50;
+    --secondary:#1565C0;
+
+    --background:#F5F7FA;
+
+    --white:#FFFFFF;
+
+    --text:#263238;
+
+    --gray:#ECEFF1;
+
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    /* ===== TIPOGRAFÍA ===== */
+
+    --font:'Poppins', sans-serif;
+
+    --title:36px;
+
+    --subtitle:24px;
+
+    --text-size:16px;
+
+    --small:14px;
+
+    /* ===== TRANSICIONES ===== */
+
+    --transition:.35s ease;
+
+}
+
+:root{
+
+--success:#2E7D32;
+
+--warning:#F9A825;
+
+--danger:#D32F2F;
+
+--card-radius:20px;
+
+--shadow-big:0 15px 35px rgba(0,0,0,.10);
+
+}
