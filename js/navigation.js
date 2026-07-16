@@ -22,12 +22,14 @@ function initializeNavigation() {
 
             if (window.innerWidth <= 900) {
 
-                document.querySelector(".sidebar").classList.remove("show");
+                if (window.closeSidebar) {
 
-                document.getElementById("overlay").classList.remove("show");
+                window.closeSidebar();
+
+                }
 
             }
-
+    
         };
 
     });
