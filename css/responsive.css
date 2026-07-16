@@ -1,31 +1,123 @@
-@media(max-width:900px){
+/* ==========================================
+   RESPONSIVE - AGROLAB
+========================================== */
 
-.dashboard{
+@media screen and (max-width: 900px) {
 
-    grid-template-columns:1fr;
+    /* Dashboard */
 
-}
+    .dashboard{
 
-@media(max-width:900px){
+        display:flex;
 
-.dashboard{
+        flex-direction:column;
 
-    flex-direction:column;
+        width:100%;
 
-}
+    }
 
-.welcome{
+    /* Contenido */
 
-    grid-template-columns:1fr;
+    .main-content{
 
-}
+        width:100%;
 
-}
+        margin-left:0;
 
-.welcome{
+        padding:75px 15px 20px;
 
-    grid-template-columns:1fr;
+    }
 
-}
+    /* Bienvenida */
+
+    .welcome{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+    /* Tarjetas */
+
+    .cards{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .card{
+
+        width:100%;
+
+    }
+
+    /* Paneles */
+
+    .panel{
+
+        width:100%;
+
+        overflow-x:auto;
+
+    }
+
+    /* Tablas */
+
+    table{
+
+        min-width:650px;
+
+    }
+
+    /* Evidencias */
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Academy */
+
+    .academy-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Buscador */
+
+    .search-box{
+
+        flex-direction:column;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .search-box button{
+
+        width:100%;
+
+    }
+
+    /* Footer */
+
+    footer{
+
+        text-align:center;
+
+    }
 
 }
