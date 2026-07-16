@@ -7,26 +7,26 @@
 function initializeNavigation() {
 
     const buttons = document.querySelectorAll(".menu");
-    const sidebar = document.querySelector(".sidebar");
-    const overlay = document.getElementById("overlay");
 
     buttons.forEach(button => {
 
-        button.onclick = async (e) => {
+        button.onclick = async function (e) {
 
             e.preventDefault();
             e.stopPropagation();
 
             buttons.forEach(btn => btn.classList.remove("active"));
-            button.classList.add("active");
+            this.classList.add("active");
 
-            // Cerrar menú en móviles
+            await loadView(this.dataset.view);
+
             if (window.innerWidth <= 900) {
-                sidebar.classList.remove("show");
-                overlay.classList.remove("show");
-            }
 
-            await loadView(button.dataset.view);
+                document.querySelector(".sidebar").classList.remove("show");
+
+                document.getElementById("overlay").classList.remove("show");
+
+            }
 
         };
 
