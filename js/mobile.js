@@ -1,27 +1,44 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-    const boton=document.getElementById("menuToggle");
+    const boton = document.getElementById("menuToggle");
+    const sidebar = document.querySelector(".sidebar");
+    const overlay = document.getElementById("overlay");
 
-    const sidebar=document.querySelector(".sidebar");
+    if (!boton || !sidebar || !overlay) return;
 
-    const overlay=document.getElementById("overlay");
+    function abrirMenu() {
 
-    if(!boton||!sidebar)return;
+        sidebar.classList.add("show");
+        overlay.classList.add("show");
 
-    boton.addEventListener("click",()=>{
+    }
 
-        sidebar.classList.toggle("show");
-
-        overlay.classList.toggle("show");
-
-    });
-
-    overlay.addEventListener("click",()=>{
+    function cerrarMenu() {
 
         sidebar.classList.remove("show");
-
         overlay.classList.remove("show");
 
+    }
+
+    boton.addEventListener("click", (e) => {
+
+        e.stopPropagation();
+
+        if (sidebar.classList.contains("show")) {
+
+            cerrarMenu();
+
+        } else {
+
+            abrirMenu();
+
+        }
+
     });
+
+    overlay.addEventListener("click", cerrarMenu);
+
+    // Hace la función accesible desde cualquier archivo
+    window.closeSidebar = cerrarMenu;
 
 });
