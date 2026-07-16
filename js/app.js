@@ -14,16 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
     startBtn.addEventListener("click", async () => {
 
         landing.style.display = "none";
-
         dashboard.classList.remove("hidden");
-
-        await loadView("home");
-
-        await loadDashboard();
 
         initializeNavigation();
 
-        showTour();
+        await loadView("home");
+
+        if (typeof loadDashboard === "function") {
+            await loadDashboard();
+        }
+
+        if (typeof showTour === "function") {
+            showTour();
+        }
 
     });
 
