@@ -50,23 +50,7 @@
 
 }
 
-@media(max-width:900px){
-
-    .sidebar{
-
-        position:relative;
-
-        width:100%;
-
-        height:auto;
-
-    }
-
-    .content{
-
-        margin-left:0;
-
-    }
+@media (max-width:900px){
 
     .dashboard{
 
@@ -74,7 +58,21 @@
 
     }
 
+    .content{
+
+        margin-left:0;
+
+        padding:18px;
+
+    }
+
     .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cards{
 
         grid-template-columns:1fr;
 
